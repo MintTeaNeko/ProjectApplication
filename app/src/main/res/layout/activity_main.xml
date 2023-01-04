@@ -14,7 +14,7 @@
         android:layout_marginEnd="172dp"
         android:text="Password"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/email_input" />
 
     <TextView
         android:id="@+id/textView"
@@ -32,13 +32,14 @@
         app:layout_constraintVertical_bias="0.229" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/email_input"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="100dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
         android:text="example@example.com"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
@@ -55,26 +56,27 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/password_input"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="100dp"
         android:ems="10"
         android:inputType="textPassword"
+        android:minHeight="48dp"
         android:text="ExamplePassword"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/submit_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="160dp"
         android:text="Submit"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/password_input" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
